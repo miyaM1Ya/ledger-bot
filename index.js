@@ -17,7 +17,7 @@ const GAS_WEBAPP_URL = process.env.GAS_WEBAPP_URL;
 // =========================
 
 // ✅ 백필 옵션
-const BACKFILL_ON_START = true;      // true면 실행하자마자 과거로그 백필
+const BACKFILL_ON_START = false;     // true면 실행하자마자 과거로그 백필
 const BACKFILL_MAX_MESSAGES = 0;     // 0이면 제한 없이 끝까지(많으면 오래 걸릴 수 있음). 예: 5000 처럼 제한 가능
 const BACKFILL_BATCH_SIZE = 100;     // Discord API 최대 100
 const BACKFILL_SLEEP_MS = 650;       // 레이트리밋 완화용 (너무 빠르면 막힐 수 있어)
